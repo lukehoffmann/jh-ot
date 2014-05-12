@@ -1,0 +1,63 @@
+/*@font-face { font-family: Merriweather; src: url('../fonts/Merriweather-Regular.ttf') format('truetype'); } 
+@font-face { font-family: Merriweather; font-weight: lighter; src: url('../fonts/Merriweather-Light.ttf') format('truetype'); } 
+@font-face { font-family: Merriweather; font-weight: bold; src: url('../fonts/Merriweather-Bold.ttf') format('truetype'); }
+@font-face { font-family: Merriweather; font-weight: bolder; src: url('../fonts/Merriweather-Black.ttf') format('truetype'); }
+@font-face { font-family: Open Sans; src: url('../fonts/OpenSans-Regular.ttf') format('truetype'); } 
+@font-face { font-family: Open Sans; font-weight: bold; src: url('../fonts/OpenSans-Bold.ttf') format('truetype'); }
+@font-face { font-family: Open Sans; font-style: italic; src: url('../fonts/OpenSans-Italic.ttf') format('truetype'); }
+*/
+
+body {
+	font-family: 'Merriweather', Georgia, serif;
+	/*line-height: 1.6em;*/
+}
+
+.nav, footer, .lead {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	} 
+
+h2 {
+	font-weight: 700;
+	} 
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	} 
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+
+.logotitle {
+	font-family: 'Merriweather', Georgia, serif;
+	text-align: center;
+	font-size: 4.1em;
+	font-weight: 900;
+}
+
+.logosubtitle {
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.logosubtitle-highlight {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.feeprice {
+	text-align: right;
+}
+
+footer {
+	font-size: 0.9em;
+}

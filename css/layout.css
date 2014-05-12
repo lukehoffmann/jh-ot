@@ -1,0 +1,69 @@
+html {
+  position: relative;
+  min-height: 100%; /*to make sure the footer is pushed down*/
+  min-width: 350px;
+}
+
+body{
+	margin-bottom: 80px; /*to offset the footer*/
+}
+
+header, .blockout {
+	max-height: 800px;
+}
+
+.logo {
+	padding: 30px;
+	max-width: 505px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.logo-home {
+	margin: 15% auto 15% auto;
+}
+
+.logo-page {
+	margin: 5% auto 5% auto;
+}
+
+.logosubtitle {
+	margin: 0;
+}
+
+h2 {
+	padding-top: 5%;
+}
+
+.blurb {
+	padding-top: 45px;
+	margin: auto;
+}
+
+section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.title {
+	margin-top: 20px;
+}
+
+.fee-group {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+}
+
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
