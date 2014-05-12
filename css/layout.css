@@ -13,14 +13,14 @@ header, .blockout {
 }
 
 .logo {
-	padding: 30px;
-	max-width: 505px;
+	/*padding: 30px;*/
+	max-width: 440px;
 	margin: auto;
 	vertical-align: middle;
 }
 
 .logo-home {
-	margin: 15% auto 15% auto;
+	margin: 30% auto 40% auto;
 }
 
 .logo-page {
