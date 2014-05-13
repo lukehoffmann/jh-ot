@@ -1,6 +1,9 @@
 header, .section-header {
-    background: url("../images/jenni_inked.png") no-repeat;
-    background: url("../images/gloom.png") no-repeat;
+    /*background: url("../images/original.png") no-repeat;*/
+    /*background: url("../images/jenni_inked.png") no-repeat;*/
+    /*background: url("../images/gloom.png") no-repeat;*/
+    /*background: url("../images/darker.jpg") no-repeat;*/
+    background: url("../images/whiten.jpg") no-repeat;
 }
 
 header {
@@ -17,19 +20,14 @@ header {
     text-shadow: 0.1em 0.1em 0.1em #000;
 }
 
-.blockout {
-    /*background: #DDD;
-    background: rgba(255, 255, 255, 0.3);*/
-}
-
-.overlay {
+.navbar {
     background: #DDD;
     background: rgba(255, 255, 255, 0.8);
 }
 
-.navbar li {
-    color: #000;
-}
+    .navbar li {
+        color: #000;
+    }
 
 .primary-1 {
     background-color: #2A8E2A;
