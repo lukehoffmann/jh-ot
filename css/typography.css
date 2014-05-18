@@ -49,6 +49,15 @@ h4 {
 	font-weight: 600;
 }
 
+@media only screen and (max-width : 500px) {
+    .logotitle {
+    	font-size: 3em;
+    }
+    .logosubtitle {
+    	font-size: 1em;
+    }
+}
+
 .logosubtitle-highlight {
 	font-weight: normal;
 	font-style: italic;

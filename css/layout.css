@@ -13,8 +13,8 @@ header, .blockout {
 }
 
 .logo {
-    /*padding: 30px;*/
-    max-width: 440px;
+    padding: 2px;
+    max-width: 444px;
     margin: auto;
     vertical-align: middle;
 }
@@ -31,9 +31,6 @@ header, .blockout {
     margin: 0;
 }
 
-h2 {
-}
-
 .blurb {
     padding-top: 45px;
     margin: auto;
@@ -46,10 +43,9 @@ section {
 
 .section-header {
     padding-top: 45px;
-
 }
 
-.title {
+.pagetitle {
     margin-top: 20px;
 }
 
