@@ -50,9 +50,10 @@ h4 {
 }
 
 @media only screen and (min-width : 990px) {
-    .logotitle {font-size: 6em;}
-    .logosubtitle {font-size: 1.7em;}
-    .logo {max-width: 700px;}
+    .logo-home > .logotitle {font-size: 6em;}
+    .logo-home > .logosubtitle {font-size: 1.7em;}
+    .logo {max-width: 450px;}
+    .logo-home {max-width: 655px;}
 }
 
 @media only screen and (max-width : 990px) {
@@ -67,8 +68,9 @@ h4 {
     .logo {max-width: 380px;}
 }
 
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 420px) {
     .logotitle {font-size: 2.6em;}
+    .logo {max-width: 286px;}
 }
 
 .logosubtitle-highlight {

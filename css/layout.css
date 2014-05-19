@@ -19,15 +19,19 @@ header, .blockout {
 }
 
 .logo-home {
-    margin: 30% auto 40% auto;
+    margin: 30% auto 20% auto;
 }
 
 .logo-page {
-    margin: 5% auto 5% auto;
+    margin: 15% auto 5% auto;
 }
 
 .logosubtitle {
     margin: 0;
+}
+
+.logo-contact {
+    text-align: center;
 }
 
 .blurb {
@@ -44,13 +48,9 @@ section {
     padding-top: 45px;
 }
 
-.pagetitle {
-    margin-top: 20px;
-}
-
 .fee-group {
     max-width: 400px;
-    margin: 40px auto;
+    margin: 35px auto;
 }
 
 footer {
