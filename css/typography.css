@@ -49,13 +49,26 @@ h4 {
 	font-weight: 600;
 }
 
+@media only screen and (min-width : 990px) {
+    .logotitle {font-size: 6em;}
+    .logosubtitle {font-size: 1.7em;}
+    .logo {max-width: 700px;}
+}
+
+@media only screen and (max-width : 990px) {
+    .logotitle {font-size: 4.1em;}
+    .logosubtitle {font-size: 1.2em;}
+    .logo {max-width: 450px;}
+}
+
 @media only screen and (max-width : 500px) {
-    .logotitle {
-    	font-size: 3em;
-    }
-    .logosubtitle {
-    	font-size: 1em;
-    }
+    .logotitle {font-size: 3.4em;}
+    .logosubtitle {font-size: 1em;}
+    .logo {max-width: 380px;}
+}
+
+@media only screen and (max-width : 400px) {
+    .logotitle {font-size: 2.6em;}
 }
 
 .logosubtitle-highlight {

@@ -9,12 +9,11 @@ body {
 }
 
 header, .blockout {
-    max-height: 800px;
+    max-height: 1200px;
 }
 
 .logo {
     padding: 2px;
-    max-width: 444px;
     margin: auto;
     vertical-align: middle;
 }
@@ -61,23 +60,15 @@ footer {
     height: 40px;
 }
 
-@media only screen and (min-width : 768px) {
     /* Make Navigation Toggle on Desktop Hover */
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
+@media only screen and (min-width : 768px) {
+    .dropdown:hover .dropdown-menu {display: block;}
 }
 
 @media only screen and (min-width : 990px) {
-    #map_canvas {
-        /*width: auto;*/
-        height: 500px;
-    }
+    #map_canvas {height: 500px;}
 }
 
 @media only screen and (max-width : 990px) {
-    #map_canvas {
-        /*width: auto;*/
-        height: 250px;
-    }
+    #map_canvas {height: 250px;}
 }
