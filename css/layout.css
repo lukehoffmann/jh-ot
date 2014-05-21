@@ -6,16 +6,102 @@ html {
 
 body {
     margin-bottom: 80px; /*to offset the footer*/
+    font-family: 'Merriweather', Georgia, serif;
 }
 
-header, .blockout {
+.nav, .lead {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    } 
+
+h2 {
+    font-weight: 700;
+    } 
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    } 
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+/* -- Navifgation Bar -- */
+.navbar {
+    background: #DDD;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar li {
+    color: #000;
+}
+
+@media only screen and (min-width : 768px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {display: block;}
+}
+
+/* -- Headers -- */
+header, .section-header {
+    background: url("../images/whiten.jpg") no-repeat;
+}
+
+header {
+    background-size: cover;
+    background-position: center center;
     max-height: 1200px;
 }
 
+.section-header {
+    background-size: auto;
+    background-position: center bottom;
+    padding-top: 45px;
+}
+
+/* -- White text with black outlines -- */
+.logo, .pagetitle, .section-header {
+    color: #EEE;
+    text-shadow: -2px 0 2px rgba(20, 20, 20, 0.9), 
+                 0 1.5px 1px rgba(0, 0, 0,  0.9), 
+                 2px 0 2px rgba(0, 0, 0,  0.9), 
+                 0 -1px 1px rgba(20, 20, 20, 0.9);
+}
+
+/* -- Logo cluster -- */
 .logo {
     padding: 2px;
     margin: auto;
     vertical-align: middle;
+}
+
+.logotitle {
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: center;
+    font-size: 4.1em;
+    font-weight: 900;
+}
+
+.logosubtitle {
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.logosubtitle-highlight {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.logo-contact {
+    text-align: center;
 }
 
 .logo-home {
@@ -26,55 +112,75 @@ header, .blockout {
     margin: 10% auto 5% auto;
 }
 
-.logosubtitle {
-    margin: 0;
+/* -- Resize logo -- */
+@media only screen and (min-width : 990px) {
+    .logo-home > .logotitle {font-size: 6em;}
+    .logo-home > .logosubtitle {font-size: 1.7em;}
+    .logo {max-width: 450px;}
+    .logo-home {max-width: 655px;}
 }
 
-.logo-contact {
-    text-align: center;
+@media only screen and (max-width : 990px) {
+    .logotitle {font-size: 4.1em;}
+    .logosubtitle {font-size: 1.2em;}
+    .logo {max-width: 450px;}
 }
 
-.blurb {
-    padding-top: 45px;
-    margin: auto;
+@media only screen and (max-width : 500px) {
+    .logotitle {font-size: 3.4em;}
+    .logosubtitle {font-size: 1em;}
+    .logo {max-width: 380px;}
 }
 
-.glyphicon {
-    /*text-align: right;*/
-    padding-left: 10px;
-    padding-right: 10px;
+@media only screen and (max-width : 420px) {
+    .logotitle {font-size: 2.6em;}
+    .logo {max-width: 286px;}
 }
 
-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.section-header {
-    padding-top: 45px;
-}
-
-.fee-group {
-    max-width: 400px;
-    margin: 35px auto;
-}
-
-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 40px;
-}
-
-    /* Make Navigation Toggle on Desktop Hover */
-@media only screen and (min-width : 768px) {
-    .dropdown:hover .dropdown-menu {display: block;}
+/* -- Map Canvas -- */
+#map_canvas {
+    border: 1px solid #222;
+    box-shadow: 1px 1px 2px #222
 }
 
 @media only screen and (min-width : 990px) {
-    #map_canvas {height: 500px;}
+    #map_canvas {height: 400px;}
 }
 
 @media only screen and (max-width : 990px) {
     #map_canvas {height: 300px;}
+}
+
+/* -- Misc. -- */
+section {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.fee-group {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fee-group td:nth-child(2) {
+    text-align: right;
+}
+
+.glyphicon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-link, .contact-link:hover { 
+    color: inherit; 
+} 
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;\
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
 }
