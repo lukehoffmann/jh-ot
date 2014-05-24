@@ -1,7 +1,7 @@
 html {
     position: relative;
     min-height: 100%; /*to make sure the footer is pushed down*/
-    min-width: 350px;
+    /*min-width: 300px;*/
 }
 
 body {
@@ -16,16 +16,16 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    } 
+}
 
 h2 {
     font-weight: 700;
-    } 
+}
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    } 
+}
 
 h4 {
     font-family: 'Open Sans', sans-serif;
@@ -38,13 +38,15 @@ h4 {
     background: rgba(255, 255, 255, 0.8);
 }
 
-.navbar li {
-    color: #000;
-}
+    .navbar li {
+        color: #000;
+    }
 
 @media only screen and (min-width : 768px) {
     /* Make Navigation Toggle on Desktop Hover */
-    .dropdown:hover .dropdown-menu {display: block;}
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 /* -- Headers -- */
@@ -67,10 +69,7 @@ header {
 /* -- White text with black outlines -- */
 .logo, .pagetitle, .section-header {
     color: #EEE;
-    text-shadow: -2px 0 2px rgba(20, 20, 20, 0.9), 
-                 0 1.5px 1px rgba(0, 0, 0,  0.9), 
-                 2px 0 2px rgba(0, 0, 0,  0.9), 
-                 0 -1px 1px rgba(20, 20, 20, 0.9);
+    text-shadow: -2px 0 2px rgba(20, 20, 20, 0.9), 0 1.5px 1px rgba(0, 0, 0, 0.9), 2px 0 2px rgba(0, 0, 0, 0.9), 0 -1px 1px rgba(20, 20, 20, 0.9);
 }
 
 /* -- Logo cluster -- */
@@ -114,41 +113,86 @@ header {
 
 /* -- Resize logo -- */
 @media only screen and (min-width : 990px) {
-    .logo-home > .logotitle {font-size: 6em;}
-    .logo-home > .logosubtitle {font-size: 1.7em;}
-    .logo {max-width: 450px;}
-    .logo-home {max-width: 655px;}
+    .logo-home > .logotitle {
+        font-size: 6em;
+    }
+
+    .logo-home > .logosubtitle {
+        font-size: 1.7em;
+    }
+
+    .logo {
+        max-width: 450px;
+    }
+
+    .logo-home {
+        max-width: 655px;
+    }
 }
 
 @media only screen and (max-width : 990px) {
-    .logotitle {font-size: 4.1em;}
-    .logosubtitle {font-size: 1.2em;}
-    .logo {max-width: 450px;}
+    .logotitle {
+        font-size: 4.1em;
+    }
+
+    .logosubtitle {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        max-width: 450px;
+    }
 }
 
 @media only screen and (max-width : 500px) {
-    .logotitle {font-size: 3.4em;}
-    .logosubtitle {font-size: 1em;}
-    .logo {max-width: 380px;}
+    .logotitle {
+        font-size: 3.4em;
+    }
+
+    .logosubtitle {
+        font-size: 1em;
+    }
+
+    .logo {
+        max-width: 380px;
+    }
 }
 
 @media only screen and (max-width : 420px) {
-    .logotitle {font-size: 2.6em;}
-    .logo {max-width: 286px;}
+    .logotitle {
+        font-size: 2.6em;
+    }
+
+    .logo {
+        max-width: 286px;
+    }
 }
 
 /* -- Map Canvas -- */
 #map_canvas {
     border: 1px solid #222;
-    box-shadow: 1px 1px 2px #222
+    box-shadow: 1px 1px 2px #222;
+    height: 300px;
+    /*max-width: 500px;*/
+    /*margin: 0 auto;*/
 }
 
-@media only screen and (min-width : 990px) {
-    #map_canvas {height: 400px;}
+@media only screen and (min-width : 1200px) {
+    #map_canvas {
+        height: 300px;
+    }
 }
 
-@media only screen and (max-width : 990px) {
-    #map_canvas {height: 300px;}
+@media only screen and (max-width : 1200px) {
+    #map_canvas {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+     #map, #contact {
+        max-width: 500px;
+    }
 }
 
 /* -- Misc. -- */
@@ -163,22 +207,22 @@ section {
     margin-right: auto;
 }
 
-.fee-group td:nth-child(2) {
-    text-align: right;
-}
+    .fee-group td:nth-child(2) {
+        text-align: right;
+    }
 
 .glyphicon {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.contact-link, .contact-link:hover { 
-    color: inherit; 
-} 
+.contact-link, .contact-link:hover {
+    color: inherit;
+}
 
 footer {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;\
+    font-size: 0.9em;
     position: absolute;
     width: 100%;
     bottom: 0;
