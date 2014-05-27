@@ -1,7 +1,7 @@
 html {
     position: relative;
     min-height: 100%; /*to make sure the footer is pushed down*/
-    /*min-width: 300px;*/
+    min-width: 300px;
 }
 
 body {
@@ -77,13 +77,19 @@ header {
 /* -- White text with black outlines -- */
 .logo {
     color: #EEE;
+    border-radius: 6px;
     text-shadow: -2px 0 2px rgba(20, 20, 20, 0.9), 0 1.5px 1px rgba(0, 0, 0, 0.9), 2px 0 2px rgba(0, 0, 0, 0.9), 0 -1px 1px rgba(20, 20, 20, 0.9);
+ }
+
+.logo-box {
+    background: #DDD;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* -- Black text with white outlines -- */
 .pagetitle, .section-header {
-    color: #111;
-    text-shadow: -2px 0 2px rgba(235, 235, 235, 0.9), 0 1.5px 1px rgba(255, 255, 255, 0.9), 2px 0 2px rgba(255, 255, 255, 0.9), 0 -1px 1px rgba(235, 235, 235, 0.9);
+    color: #333;
+    text-shadow: -2px 0 2px rgba(220, 220, 220, 0.9), 0 1.5px 1px rgba(220, 220, 220, 0.9), 2px 0 2px rgba(220, 220, 220, 0.9), 0 -1px 1px rgba(220, 220, 220, 0.9);
 }
 
 /* -- Logo cluster -- */
@@ -117,25 +123,42 @@ header {
     text-align: center;
 }
 
-.logo-home {
-    margin: 30% auto 20% auto;
+.logo-box {
+    margin: 5% auto 50% auto;
 }
 
 .logo-page {
-    margin: 10% auto 5% auto;
+    padding: 10% auto 5% auto;
 }
 
 /* -- Resize logo -- */
-@media only screen and (min-width : 990px) {
-    .logo-home > .logotitle {
-        font-size: 6em;
+@media only screen and (min-width : 1200px) {
+    .logo-home .logotitle {
+        font-size: 5em;
     }
 
-    .logo-home > .logosubtitle {
+    .logo-home .logosubtitle {
         font-size: 1.7em;
     }
 
-    .logo {
+    .logo-page {
+        max-width: 450px;
+    }
+
+    .logo-home {
+        max-width: 655px;
+    }
+}
+@media only screen and (max-width : 1200) {
+    .logo-home .logotitle {
+        font-size: 4em;
+    }
+
+    .logo-home .logosubtitle {
+        font-size: 1.7em;
+    }
+
+    .logo-page {
         max-width: 450px;
     }
 
@@ -146,7 +169,7 @@ header {
 
 @media only screen and (max-width : 990px) {
     .logotitle {
-        font-size: 4.1em;
+        font-size: 3em;
     }
 
     .logosubtitle {
@@ -156,9 +179,10 @@ header {
     .logo {
         max-width: 450px;
     }
+
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 768px) {
     .logotitle {
         font-size: 3.4em;
     }
@@ -170,6 +194,10 @@ header {
     .logo {
         max-width: 380px;
     }
+
+    .logo-box {
+        margin: 60% auto 0 auto;
+    }
 }
 
 @media only screen and (max-width : 420px) {
@@ -180,6 +208,7 @@ header {
     .logo {
         max-width: 286px;
     }
+
 }
 
 /* -- Map Canvas -- */
