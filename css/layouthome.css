@@ -1,43 +1,43 @@
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen {
 
-	.navbar {
-		margin: 0;
-	}
+    /* -- picture -- */
+    .picture {
+        background: url("../images/jenni_728.jpg") no-repeat;
+        background-size: cover;
+        padding-top: 66.64%;
+    }
 
-	/* -- picture -- */
-	.picture {
-		background: url("../images/jenni_728.jpg") no-repeat;
-	    background-size: cover;
-	    padding-top: 66.64%;
-	}
+    .logo-box {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 
-	.logo-box {
-	    padding-top: 5%;
-	    padding-bottom: 5%;
-	    background: #4E4B44;	
-	}
-    .logo {
+    .logo-home {
         max-width: 286px;
-    }	
-    .logotitle {
-	    font-size: 2.2em;
-	}
-	.logosubtitle {
+    }
+
+    .pagetitle {
+        font-size: 2.2em;
+    }
+
+    .logosubtitle {
         font-size: 0.9em;
     }
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .logo {
+    .logo-home {
         max-width: 356px;
     }
-    .logotitle {
+
+    .pagetitle {
         font-size: 2.7em;
     }
+
     .logosubtitle {
         font-size: 1em;
     }
@@ -46,17 +46,7 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-	/*.logo {
-        max-width: 327px;
-    }*/
-    /*.logotitle {
-        font-size: 3em;
-    }
-    .logosubtitle {
-        font-size: 1em;
-    }*/
-    
-     #map, #contact {
+    #map {
         max-width: 500px;
     }
 }
@@ -65,34 +55,36 @@
 @media only screen and (min-width : 992px) {
 
     .picture {
-		background: none;
-		padding-top: 0;
-	}
+        background: none;
+        padding-top: 0;
+    }
 
-	header, .section-header {
-		background: url("../images/jenni_1200.jpg") no-repeat;
-		background-size: cover;
-	    background-position: center 40%;
-	    max-height: 1200px;
-	}
+    header, .section-header {
+        background: url("../images/jenni_1200.jpg") no-repeat;
+        background-size: cover;
+        background-position: center 40%;
+        max-height: 800px;
+    }
 
-	.logo-box {
-		padding-top: 0;
-	    padding-bottom: 0;
-	    margin: 2% auto 50% auto;
-	    background: #524A6E;	
-	} 
+    .logo-box {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 2% auto 50% auto;
+        background: #524A6E;
+    }
 
-    .logo{
+    .logo-home {
         max-width: 450px;
     }
-    .logotitle {
-        font-size: 4em;
+
+    .pagetitle {
+        font-size: 3.5em;
     }
+
     .logosubtitle {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
-    
+
     #map_canvas {
         height: 250px;
     }
@@ -101,16 +93,6 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-    .logo {
-        max-width: 550px;
-    }
-    .logotitle {
-        font-size: 5em;
-    }
-    .logosubtitle {
-        font-size: 1.7em;
-    }
-    
     #map_canvas {
         height: 300px;
     }

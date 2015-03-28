@@ -38,8 +38,13 @@ h4 {
     font-weight: 800;
 }
 
+header {
+    background: #4E4B44;
+}
+
 /* -- Navigation Bar -- */
 .navbar {
+    margin: 0;
     background: #DDD;
     background: rgba(255, 255, 255, 0.8);
 }
@@ -56,52 +61,46 @@ h4 {
 }
 
 /* -- White text with black outlines -- */
-.logo {
+.logo-home, .pagetitle {
     color: #EEE;
-    text-shadow: 
-        -2px 0 2px #111,
-        0 1.5px 1px #111, 
-        2px 0 2px #111, 
-        0 -1px 1px #111;
- }
+    text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+}
 
-/* -- White text with purple outlines -- */
-section.highlight, section.highlight a {
+/* -- White text with purple background -- */
+.highlight, .highlight a {
     color: #FFF;
     background: #524A6E;
-    text-shadow: 
-        -2px 0 2px #111, 
-        0 1.5px 1px #111,  
-        2px 0 2px #111,  
-        0 -1px 1px #111;
 }
 
-/* -- White text with green outlines -- */
-section.highlight2, section.highlight2 a {
+    .highlight a {
+        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+    }
+
+/* -- White text with green background -- */
+.highlight2, .highlight2 a {
     color: #111;
     background: #ACC282;
-    text-shadow: 
-        -2px 0 2px #C6D7A4, 
-        0 1.5px 1px #C6D7A4, 
-        2px 0 2px #C6D7A4, 
-        0 -1px 1px #C6D7A4;
 }
 
+    .highlight2 a {
+        text-shadow: -2px 0 2px #C6D7A4, 0 1.5px 1px #C6D7A4, 2px 0 2px #C6D7A4, 0 -1px 1px #C6D7A4;
+    }
+
 /* -- Black text with white outlines -- */
-.pagetitle, .section-header {
+.section-header {
     color: #333;
-    text-shadow: 
-        -2px 0 2px #EEE, 
-        0 1.5px 1px #EEE, 
-        2px 0 2px #EEE, 
-        0 -1px 1px #EEE;
+    text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
 }
 
 /* -- Logo cluster -- */
-.logo {
+.logo-home {
     padding: 2px;
     margin: auto;
     vertical-align: middle;
+}
+
+.logo-page {
+    font-size: 0.5em;
 }
 
 .logotitle {
@@ -142,18 +141,17 @@ section {
     padding-bottom: 40px;
 }
 
-.fee-group {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .linkbox {
+        min-height: 400px;
+        padding: 50px;
+    }
 }
 
-    .fee-group td:nth-child(2) {
-        text-align: right;
-    }
-
 .glyphicon {
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 10px;
 }
 
