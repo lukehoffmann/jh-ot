@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <!-- MY CSS -->
     <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/layouthome.css">
 
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Jenni Hawkins.com.au</a>
+                    <a class="navbar-brand" href="index.html">Jenni Hawkins</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -52,31 +52,30 @@
                                 <li><a href="paediatricot.html">About Paediatric Occupational Therapy</a></li>
                             </ul>
                         </li>
-                        <li><a href="fees.html">Fees</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="aboutjenni.html#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Picture (placeholder for the main image on small devices) -->
-        <div class="picture"> 
+        <div class="picture">
         </div>
-        
+
         <!-- Logo -->
         <div class="container">
             <div class="row">
-                <div class="logo-box 
+                <div class="logo-box
                             col-xs-12
-                            col-sm-6">
+                            col-md-6">
                     <div class="logo">
                         <hr />
                         <h1 class="logotitle">Jenni Hawkins</h1>
                         <h3 class="logosubtitle">Occupational Therapy Services<br /><span class="logosubtitle-highlight">for</span> Children</h3>
                         <hr />
                         <ul class="logo-contact list-inline">
-                            <li><a class="contact-link" tabIndex="-1" href="tel:0409261682"><span class="glyphicon glyphicon-earphone"></span> <strong>0409 261 682</strong></a></li>
-                            <li><a class="contact-link" tabIndex="-1" href="mailto:jenni_hawkins@iinet.net.au"><span class="glyphicon glyphicon-envelope"></span> <strong>jenni_hawkins@iinet.net.au</strong></a></li>
+                            <li><a class="contact-link" tabindex="-1" href="tel:0409261682"><span class="glyphicon glyphicon-earphone"></span> <strong>0409 261 682</strong></a></li>
+                            <li><a class="contact-link" tabindex="-1" href="mailto:jenni_hawkins@iinet.net.au"><span class="glyphicon glyphicon-envelope"></span> <strong>jenni_hawkins@iinet.net.au</strong></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,50 +88,62 @@
             <div class="col-md-10 col-md-offset-1
                         col-lg-10 col-lg-offset-1">
                 <p class="lead">Jenni Hawkins is a <strong>Paediatric Occupational Therapist</strong> in Brisbane, Australia.</p>
-               
-                <ul class="list list-unstyled">
-                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="aboutjenni.html">About Jenni</a></li>
-                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="paediatricot.html">What is a Paediatric Occupational Therapist?</a></li>
-                    <li><span class="glyphicon glyphicon-chevron-right"></span><a href="paediatricot.html#readiness">How Do I Know My Child Is Ready for School?</a></li>
-                </ul>
-
+                <p>Based in <strong>Fig Tree Pocket</strong>, Jenni is available for home and school visits in the western suburbs area.</p>
+                <p class="lead text-right">
+                    <a href="aboutjenni.html">
+                        About Jenni
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </p>
             </div>
-        </div>
-      
-       </section>
 
-    <section class="container">
-      <div class="row">
-         </div>
-            
-         <div class="row">
             <!-- map -->
-             <div id="map"
-                  class="col-sm-6
-                         col-md-5 col-md-offset-1
-                         col-lg-6 col-lg-offset-1">
-                 <p>Based in <strong>Fig Tree Pocket</strong>, Jenni is available for home and school visits in the western suburbs area.</p>
+            <div id="map" class="col-sm-6
+                                 col-md-5 col-md-offset-1
+                                 col-lg-6 col-lg-offset-1">
+                <p id="map_canvas" />
+            </div>
 
-                 <div id="map_canvas"></div>
-             </div>
-            
-             <div id="contact" 
-                  class="col-sm-5 col-sm-offset-1
-                         col-md-4 col-md-offset-1
-                         col-lg-3 col-lg-offset-1">
-
-                 <h3>Contact Jenni:</h3>
-                 <table class="contact-table table table-condensed table-hover">
-                     <tr><td><a class="contact-link" tabindex="-1" href="tel:0409261682"><span class="glyphicon glyphicon-earphone"></span> 0409 261 682</a></td></tr>
-                     <tr><td><a class="contact-link" tabindex="-1" href="mailto:jenni_hawkins@iinet.net.au"><span class="glyphicon glyphicon-envelope"></span> jenni_hawkins@iinet.net.au</a></td></tr>
-                     <tr><td></td></tr>
-                 </table>
-
-                 <strong>ABN:</strong> 75 388 373 648<br />
-                 <strong>Provider Number:</strong> 4726921T
-             </div>
         </div>
+    </section>
 
+    <a href="paediatricot.html">
+        <section class="container highlight">
+            <p class="lead">
+                What is a Paediatric Occupational Therapist?
+            </p>
+            <p class="text-right">
+                read more
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </p>
+        </section>
+    </a>
+
+    <section class="container highlight2">
+        <p class="lead">
+            Should I refer my child to an Occupational Therapist?
+        </p>
+        <p>
+            Checklists for:
+            <ul class="list list-unstyled text-right">
+                <li>
+                    <a href="checklist23.html">
+                        2 - 3 year olds
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="checklist34.html">
+                        3 - 4 year olds<span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="checklistprep.html">
+                        prep<span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </p>
     </section>
 
     <footer class="container-fluid">

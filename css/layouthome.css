@@ -1,7 +1,7 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
+@media only screen {
 
 	.navbar {
 		margin: 0;
@@ -17,27 +17,26 @@
 	.logo-box {
 	    padding-top: 5%;
 	    padding-bottom: 5%;
-	    background: #ddd;
-	    background: rgba(0, 0, 0, 0.2);	
+	    background: #4E4B44;	
 	}
     .logo {
         max-width: 286px;
     }	
     .logotitle {
-	    font-size: 2.6em;
+	    font-size: 2.2em;
 	}
 	.logosubtitle {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
     .logo {
-        max-width: 376px;
+        max-width: 356px;
     }
     .logotitle {
-        font-size: 3.4em;
+        font-size: 2.7em;
     }
     .logosubtitle {
         font-size: 1em;
@@ -47,7 +46,25 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-	.picture {
+	/*.logo {
+        max-width: 327px;
+    }*/
+    /*.logotitle {
+        font-size: 3em;
+    }
+    .logosubtitle {
+        font-size: 1em;
+    }*/
+    
+     #map, #contact {
+        max-width: 500px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .picture {
 		background: none;
 		padding-top: 0;
 	}
@@ -62,23 +79,9 @@
 	.logo-box {
 		padding-top: 0;
 	    padding-bottom: 0;
-	    margin: 5% auto 50% auto;
-	    background: #DDD;
-	    background: rgba(255, 255, 255, 0.4);	
-	}  
-	.logo {
-        max-width: 327px;
-    }
-    .logotitle {
-        font-size: 3em;
-    }
-    .logosubtitle {
-        font-size: 1em;
-    }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+	    margin: 2% auto 50% auto;
+	    background: #524A6E;	
+	} 
 
     .logo{
         max-width: 450px;
@@ -88,6 +91,10 @@
     }
     .logosubtitle {
         font-size: 1.7em;
+    }
+    
+    #map_canvas {
+        height: 250px;
     }
 }
 
@@ -102,5 +109,9 @@
     }
     .logosubtitle {
         font-size: 1.7em;
+    }
+    
+    #map_canvas {
+        height: 300px;
     }
 }
