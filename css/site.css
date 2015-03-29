@@ -39,31 +39,17 @@ h4 {
 }
 
 a:hover {
-        text-decoration: none;
-        text-shadow: -2px 0 2px #DDD, 0 1.5px 1px #DDD, 2px 0 2px #DDD, 0 -1px 1px #DDD;
-    }
+    text-decoration: none;
+    text-shadow: -2px 0 2px #DDD, 0 1.5px 1px #DDD, 2px 0 2px #DDD, 0 -1px 1px #DDD;
+}
 /* -- Navigation Bar -- */
 .navbar {
     margin: 0;
-    background: #DDD;
-    background: rgba(255, 255, 255, 0.8);
 }
 
     .navbar li {
         color: #000;
     }
-
-@media only screen and (min-width : 768px) {
-    /* Make Navigation Toggle on Desktop Hover */
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-}
-
-/* Content boxes */
-.contentbox {
-        padding: 50px;
-}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -89,10 +75,11 @@ a:hover {
         color: #FFF;
         text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
     }
-    .highlight a:hover {
-        text-decoration: none;
-        text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
-    }
+
+        .highlight a:hover {
+            text-decoration: none;
+            text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
+        }
 
 /* -- White text with green background -- */
 .highlight2, .highlight2 a {
@@ -104,10 +91,11 @@ a:hover {
         color: #FFF;
         text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
     }
-    .highlight2 a:hover {
-        text-decoration: none;
-        text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
-    }
+
+        .highlight2 a:hover {
+            text-decoration: none;
+            text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
+        }
 
 /* -- Black text with white outlines -- */
 .section-header {
@@ -177,7 +165,7 @@ section {
 
 /* Custom, iPhone Retina */
 @media only screen {
-    
+
     header > .container {
     }
 
@@ -185,7 +173,7 @@ section {
         padding: 0;
         background: #4E4B44;
     }
-    
+
     /* -- picture -- */
     .picture {
         background: url("../images/jenni_728.jpg") no-repeat;
@@ -237,6 +225,16 @@ section {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Content boxes */
+    .contentbox {
+        padding: 50px;
+    }
+
     #map {
         max-width: 500px;
     }
@@ -285,7 +283,7 @@ section {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    
+
     #map_canvas {
         height: 300px;
     }

@@ -15,15 +15,11 @@
     <link href="http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,900" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,900' rel='stylesheet' type='text/css'>
 
-    <!-- BOOTSTRAP -->
-    <!-- Latest compiled and minified CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,900" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="css/layoutpage.css">
 
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,9 +28,8 @@
 
 <body>
     <header>
-
         <!-- navbar -->
-        <div class="navbar transparent navbar-default navbar-static-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,16 +38,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Jenni Hawkins.com.au</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
-                        <li class="dropdown active">
+                        <li class="active dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="aboutjenni.html">About Jenni</a></li>
                                 <li class="active"><a href="paediatricot.html">About Paediatric Occupational Therapy</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checklists <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="checklist2-3.html">2 - 3</a></li>
+                                <li><a href="checklist3-4.html">3 - 4</a></li>
+                                <li><a href="checklistprep.html">Prep</a></li>
                             </ul>
                         </li>
                         <li><a href="aboutjenni.html#contact">Contact</a></li>
@@ -61,39 +63,34 @@
             </div>
         </div>
 
-        <!-- Logo -->
         <div class="container">
-            <div class="row">
-                <div class="logo-box col-xs-12 col-xs-offset-0">
-                    <div class="logo logo-page">
-                        <hr />
-                        <h1 class="logotitle">Jenni Hawkins</h1>
-                        <h3 class="logosubtitle">Occupational Therapy Services<br /><span class="logosubtitle-highlight">for</span> Children</h3>
-                        <hr />
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- page title -->
-        <div class="container">
-            <div class="row">
+            <div class="picture row"></div>
+
+            <!-- page title -->
+            <div class="titlebox row">
                 <h2 class="pagetitle col-sm-12
                                      col-md-10 col-md-offset-1
-                                     col-lg-8 col-lg-offset-2">What is a Paediatric Occupational Therapist?</h2>
+                                     col-lg-8 col-lg-offset-2">
+                    What is a Paediatric Occupational Therapist?
+                </h2>
             </div>
         </div>
 
     </header>
 
-    <section class="container">
+    <section class="container contentbox highlight2">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-8 col-md-offset-2
-                        col-lg-6 col-lg-offset-3">
+            <div class="col-xs-8 col-xs-offset-2">
                 <p class="lead">Occupational therapists are concerned with promoting a person’s health through meaningful activity called <strong>occupation</strong>.</p>
                 <p>For children occupation includes a child’s <strong>play skills</strong>, <strong>social skills</strong>, <strong>emotional skills</strong>, <strong>motor skills</strong> and <strong>self-care skills</strong>. To participate in meaningful activities children need to develop skills, maintain a <strong>calm alert state</strong> and have their <strong>sensory needs</strong> respected.</p>
-
+            </div>
+        </div>
+    </section>
+    <section class="container contentbox">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1
+                        col-md-6 col-md-offset-0">
                 <h4>What are play skills?</h4>
                 <p>Play skills are the foundations from which children learn and develop.  It includes learning about cause and effect (“if I touch this button I can make the light flash”), exploring properties of objects, posting objects into containers, pretending to be someone else (eg. Role playing Mum or Dad) and acting out a story in play (eg. Pretending to go to the shops, buy groceries and go home to cook dinner!).</p>
 
@@ -107,6 +104,10 @@
                 <p>Gross motor skills are activities that involve large movements of the body such as walking, running, hopping, skipping and climbing.</p>
                 <p>Fine motor skills are activities that involve small movement of the body such as opening containers, managing zips and buttons and holding a pencil for drawing, colouring and writing.</p>
 
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-1
+                        col-md-6 col-md-offset-0">
                 <h4>What are self-care skills?</h4>
                 <p>Self-care skills involve taking care of yourself.  They include feeding, toileting, dressing and bathing.</p>
 
@@ -120,16 +121,14 @@
         </div>
     </section>
 
-    <div class="section-header">
-        <div class="container">
-            <div class="row">
-                <h2 class="col-sm-12
+    <section class="container contentbox highlight">
+        <div class="row">
+            <h3 class="col-sm-12
                            col-md-10 col-md-offset-1
-                           col-lg-8 col-lg-offset-2">What Do Paediatric Occupational Therapists Do?</h2>
-            </div>
+                           col-lg-8 col-lg-offset-2">
+                What Do Paediatric Occupational Therapists Do?
+            </h3>
         </div>
-    </div>
-    <section class="container">
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1
                         col-md-8 col-md-offset-2
@@ -144,45 +143,6 @@
         </div>
     </section>
 
-    <div class="section-header section-header-1">
-        <div class="container">
-            <div class="row">
-                <h2 class="col-sm-12
-                           col-md-10 col-md-offset-1
-                           col-lg-8 col-lg-offset-2">When Should I Refer My Child to an Occupational Therapist?</h2>
-            </div>
-        </div>
-    </div>
-    <section class="container">
-        <div class="row">
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-8 col-md-offset-2
-                        col-lg-6 col-lg-offset-3">
-                <p class="lead"><em>When should I refer my child to an Occupational Therapist?</em></p>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-header section-header-2">
-        <div class="container">
-            <div class="row">
-                <h2 id="readiness" class="col-sm-12
-                                          col-md-10 col-md-offset-1
-                                          col-lg-8 col-lg-offset-2">How Do I Know My Child Is Ready for School?<br /> – a Prep Readiness Checklist</h2>
-            </div class="row">
-        </div>
-    </div>
-    <section class="container">
-        <div class="row">
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-8 col-md-offset-2
-                        col-lg-6 col-lg-offset-3">
-                <p class="lead"><em>How Do I Know My Child Is Ready for School?</em></p>
-                <p>Should this be moved to its own page?</p>
-            </div>
-        </div>
-    </section>
-
     <footer class="container-fluid">
         <div class="footer pull-right">
             <p>&copy; 2014 <a href="index.html">Jenni Hawkins</a>. All Rights Reserved.</p>
@@ -190,9 +150,7 @@
     </footer>
 
 </body>
-
 </html>
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
