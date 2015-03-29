@@ -3,6 +3,10 @@
 /* Custom, iPhone Retina */
 @media only screen {
 
+    header {
+        background: #4E4B44;
+    }
+
     /* -- picture -- */
     .picture {
         background: url("../images/jenni_728.jpg") no-repeat;
@@ -59,18 +63,20 @@
         padding-top: 0;
     }
 
-    header, .section-header {
+    header {
         background: url("../images/jenni_1200.jpg") no-repeat;
         background-size: cover;
-        background-position: center 40%;
-        max-height: 800px;
+        background-position: center;
+        margin: auto;
+        /*max-height: 800px;*/
+        max-width: 1200px;
     }
 
     .logo-box {
         padding-top: 0;
         padding-bottom: 0;
         margin: 2% auto 50% auto;
-        background: #524A6E;
+        background: #4E4B44;
     }
 
     .logo-home {
@@ -92,7 +98,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+    
     #map_canvas {
         height: 300px;
     }

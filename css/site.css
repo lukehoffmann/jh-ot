@@ -38,10 +38,10 @@ h4 {
     font-weight: 800;
 }
 
-header {
-    background: #4E4B44;
-}
-
+a:hover {
+        text-decoration: none;
+        text-shadow: -2px 0 2px #DDD, 0 1.5px 1px #DDD, 2px 0 2px #DDD, 0 -1px 1px #DDD;
+    }
 /* -- Navigation Bar -- */
 .navbar {
     margin: 0;
@@ -60,6 +60,19 @@ header {
     }
 }
 
+/* Content boxes */
+.contentbox {
+        padding: 50px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .linksrow > .contentbox {
+        min-height: 400px;
+    }
+}
+
 /* -- White text with black outlines -- */
 .logo-home, .pagetitle {
     color: #EEE;
@@ -67,13 +80,18 @@ header {
 }
 
 /* -- White text with purple background -- */
-.highlight, .highlight a {
+.highlight, .highlight a, .highlight a:hover {
     color: #FFF;
     background: #524A6E;
 }
 
     .highlight a {
+        color: #FFF;
         text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+    }
+    .highlight a:hover {
+        text-decoration: none;
+        text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
     }
 
 /* -- White text with green background -- */
@@ -83,7 +101,12 @@ header {
 }
 
     .highlight2 a {
-        text-shadow: -2px 0 2px #C6D7A4, 0 1.5px 1px #C6D7A4, 2px 0 2px #C6D7A4, 0 -1px 1px #C6D7A4;
+        color: #FFF;
+        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+    }
+    .highlight2 a:hover {
+        text-decoration: none;
+        text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
     }
 
 /* -- Black text with white outlines -- */
@@ -99,11 +122,7 @@ header {
     vertical-align: middle;
 }
 
-.logo-page {
-    font-size: 0.5em;
-}
-
-.logotitle {
+.pagetitle {
     font-family: 'Merriweather', Georgia, serif;
     text-align: center;
     font-size: 2.1em;
@@ -141,29 +160,133 @@ section {
     padding-bottom: 40px;
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-    .linkbox {
-        min-height: 400px;
-        padding: 50px;
-    }
-}
-
 .glyphicon {
     padding-left: 5px;
     padding-right: 10px;
 }
 
-.contact-link, .contact-link:hover {
-    color: inherit;
-}
-
-footer {
+.footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     position: absolute;
-    width: 100%;
     bottom: 0;
     height: 40px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen {
+    
+    header > .container {
+    }
+
+    .header-home, .titlebox {
+        padding: 0;
+        background: #4E4B44;
+    }
+    
+    /* -- picture -- */
+    .picture {
+        background: url("../images/jenni_728.jpg") no-repeat;
+        background-size: cover;
+        background-position-y: 35%;
+        padding-top: 50%;
+        max-height: 800px;
+    }
+
+    .picture-home {
+        background: url("../images/jenni_728.jpg") no-repeat;
+        background-size: cover;
+        padding-top: 66.64%;
+    }
+
+    .logo-box {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .logo-home {
+        max-width: 286px;
+    }
+
+    .pagetitle {
+        font-size: 2.2em;
+    }
+
+    .logosubtitle {
+        font-size: 0.9em;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .logo-home {
+        max-width: 356px;
+    }
+
+    .pagetitle {
+        font-size: 2.7em;
+    }
+
+    .logosubtitle {
+        font-size: 1em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    #map {
+        max-width: 500px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .picture-home {
+        background: none;
+        padding-top: 0;
+    }
+
+    .header-home {
+        background: url("../images/jenni_1200.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        /*max-height: 800px;*/
+        max-width: 1200px;
+    }
+
+    .logo-box {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 2% auto 50% auto;
+        background: #4E4B44;
+    }
+
+    .logo-home {
+        max-width: 450px;
+    }
+
+    .pagetitle {
+        font-size: 3.5em;
+    }
+
+    .logosubtitle {
+        font-size: 1.5em;
+    }
+
+    #map_canvas {
+        height: 250px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
+    #map_canvas {
+        height: 300px;
+    }
 }
