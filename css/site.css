@@ -20,8 +20,9 @@ body {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 2.1em;
+    font-weight: 900;
 }
 
 h2 {
@@ -37,11 +38,11 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
-
+/*
 a:hover {
     text-decoration: none;
     text-shadow: -2px 0 2px #DDD, 0 1.5px 1px #DDD, 2px 0 2px #DDD, 0 -1px 1px #DDD;
-}
+}*/
 /* -- Navigation Bar -- */
 .navbar {
     margin: 0;
@@ -60,9 +61,18 @@ a:hover {
 }
 
 /* -- White text with black outlines -- */
-.logo-home, .pagetitle {
+.logo-home, .titlebox {
     color: #EEE;
     text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+}
+
+.logo-home a {
+    color: #EEE;
+    text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+}
+
+.logo-home a:hover {
+    text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
 }
 
 /* -- White text with purple background -- */
@@ -71,15 +81,15 @@ a:hover {
     background: #524A6E;
 }
 
-    .highlight a {
+/*    .highlight a {
         color: #FFF;
         text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }
+    }*/
 
         .highlight a:hover {
             text-decoration: none;
-            text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
-        }
+            text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+    }
 
 /* -- White text with green background -- */
 .highlight2, .highlight2 a {
@@ -87,21 +97,15 @@ a:hover {
     background: #ACC282;
 }
 
-    .highlight2 a {
+/*    .highlight2 a {
         color: #FFF;
         text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }
+    }*/
 
         .highlight2 a:hover {
             text-decoration: none;
-            text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
+            text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
         }
-
-/* -- Black text with white outlines -- */
-.section-header {
-    color: #333;
-    text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
-}
 
 /* -- Logo cluster -- */
 .logo-home {
@@ -109,12 +113,9 @@ a:hover {
     margin: auto;
     vertical-align: middle;
 }
-
-.pagetitle {
-    font-family: 'Merriweather', Georgia, serif;
-    text-align: center;
-    font-size: 2.1em;
-    font-weight: 900;
+    
+.logo-home h1 {
+    text-align: centre;
 }
 
 .logosubtitle {
@@ -198,7 +199,7 @@ section {
         max-width: 286px;
     }
 
-    .pagetitle {
+    h1 {
         font-size: 2.2em;
     }
 
@@ -213,7 +214,7 @@ section {
         max-width: 356px;
     }
 
-    .pagetitle {
+    h1 {
         font-size: 2.7em;
     }
 
@@ -268,7 +269,7 @@ section {
         max-width: 450px;
     }
 
-    .pagetitle {
+    h1 {
         font-size: 3.5em;
     }
 
