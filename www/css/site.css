@@ -81,13 +81,12 @@ a:hover {
     background: #524A6E;
 }
 
-/*    .highlight a {
+    .highlight a {
         color: #FFF;
-        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }*/
+        text-shadow: -2px 0 2px #111;
+    }
 
         .highlight a:hover {
-            text-decoration: none;
             text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
     }
 
@@ -97,13 +96,11 @@ a:hover {
     background: #ACC282;
 }
 
-/*    .highlight2 a {
-        color: #FFF;
-        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }*/
+    .highlight2 a {
+        text-shadow: -2px 0 2px #eee;
+    }
 
         .highlight2 a:hover {
-            text-decoration: none;
             text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
         }
 
@@ -146,7 +143,7 @@ a:hover {
 /* -- Misc. -- */
 section {
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .glyphicon {
@@ -171,8 +168,11 @@ section {
     }
 
     .header-home, .titlebox {
-        padding: 0;
         background: #4E4B44;
+    }
+    
+    .header-home {
+        padding: 0;
     }
 
     /* -- picture -- */
@@ -229,11 +229,6 @@ section {
     /* Make Navigation Toggle on Desktop Hover */
     .dropdown:hover .dropdown-menu {
         display: block;
-    }
-
-    /* Content boxes */
-    section {
-        padding: 50px;
     }
 
     #map {
