@@ -162,6 +162,15 @@ section {
     height: 40px;
 }
 
+.ndis {
+    background: url("../images/I-support-the-NDIS-v0.3-01.jpg") no-repeat;
+    background-size: contain;
+    /* background-position-y: 35%; */
+    padding-top: 50%;
+    max-height: 8px;
+    max-width: 800px;
+}
+
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
