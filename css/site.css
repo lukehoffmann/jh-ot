@@ -38,26 +38,20 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
-/*
+
+
 a:hover {
-    text-decoration: none;
-    text-shadow: -2px 0 2px #DDD, 0 1.5px 1px #DDD, 2px 0 2px #DDD, 0 -1px 1px #DDD;
-}*/
+    /* text-decoration: none; */
+    text-shadow: -0.5px 0 2px #DDD, 0 1.5px 1px #DDD;
+}
+
 /* -- Navigation Bar -- */
 .navbar {
     margin: 0;
 }
 
-    .navbar li {
-        color: #000;
-    }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-    .linksrow > section {
-        min-height: 400px;
-    }
+.navbar li {
+    color: #000;
 }
 
 /* -- White text with black outlines -- */
@@ -72,7 +66,12 @@ a:hover {
 }
 
 .logo-home a:hover {
-    text-shadow: -2px 0 2px #555, 0 1.5px 1px #555, 2px 0 2px #555, 0 -1px 1px #555;
+    text-shadow: -2px 0 2px #555, 0 1.5px 1px #555;
+}
+
+/* -- Panels -- */
+.panel {    
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* -- White text with purple background -- */
@@ -81,15 +80,10 @@ a:hover {
     background: #524A6E;
 }
 
-/*    .highlight a {
-        color: #FFF;
-        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }*/
-
-        .highlight a:hover {
-            text-decoration: none;
-            text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }
+.highlight a:hover {
+        text-decoration: none;
+        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111;
+}
 
 /* -- White text with green background -- */
 .highlight2, .highlight2 a {
@@ -97,15 +91,10 @@ a:hover {
     background: #ACC282;
 }
 
-/*    .highlight2 a {
-        color: #FFF;
-        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
-    }*/
-
-        .highlight2 a:hover {
-            text-decoration: none;
-            text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
-        }
+.highlight2 a:hover {
+    text-decoration: none;
+    text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE;
+}
 
 /* -- Logo cluster -- */
 .logo-home {
@@ -132,7 +121,6 @@ a:hover {
 }
 
 .logo-contact {
-    /*text-align: center;*/
     font-size: 0.9em;
 }
 
@@ -176,10 +164,7 @@ section {
 /* Custom, iPhone Retina */
 @media only screen {
 
-    header > .container {
-    }
-
-    .header-home, .titlebox {
+    .header-home, .header-home .panel, .titlebox {
         padding: 0;
         background: #4E4B44;
     }
@@ -199,11 +184,6 @@ section {
         padding-top: 66.64%;
     }
 
-    .logo-box {
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
     .logo-home {
         max-width: 286px;
     }
@@ -219,6 +199,7 @@ section {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
     .logo-home {
         max-width: 356px;
     }
