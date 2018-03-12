@@ -14,9 +14,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {    
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
 .lead {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -39,9 +45,8 @@ h4 {
     font-weight: 800;
 }
 
-
 a:hover {
-    /* text-decoration: none; */
+    text-decoration: none;
     text-shadow: -0.5px 0 2px #DDD, 0 1.5px 1px #DDD;
 }
 
@@ -70,30 +75,72 @@ a:hover {
 }
 
 /* -- Panels -- */
-.panel {    
+.panel {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* -- White text with purple background -- */
-.highlight, .highlight a, .highlight a:hover {
-    color: #FFF;
+.panel-ndis-footer {
+    background: white;
+}
+
+.panel-heading {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+/* -- Panel - White text with purple background -- */
+.panel-default,
+.panel-default a,
+.panel-default .panel-footer,
+.panel-default .panel-footer a,
+.panel-default li, 
+.panel-default li a {
+    color: #221f2e;
+    background: #f1f0f5;
+    border-color: #524A6E;
+}
+
+/* Need white background unless make images transparent */
+.panel-default .ndis,
+.panel-default .panel-footer .ndis {
+    background: white;
+}
+
+.panel-default > .panel-heading {
+    color: hsl(0, 0%, 100%, 90%);
     background: #524A6E;
+    border-color: #524A6E;
 }
 
-.highlight a:hover {
-        text-decoration: none;
-        text-shadow: -2px 0 2px #111, 0 1.5px 1px #111;
-}
-
-/* -- White text with green background -- */
-.highlight2, .highlight2 a {
-    color: #111;
-    background: #ACC282;
-}
-
-.highlight2 a:hover {
+.panel-default a:hover,
+.panel-default li a:hover,
+.panel-default .panel-footer a:hover, {
     text-decoration: none;
-    text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE;
+    text-shadow: -2px 0 2px #524A6E, 0 1.5px 1px #524A6E;
+}
+
+/* -- Panel - White text with green background -- */
+.panel-info,
+.panel-info a,
+.panel-info li, 
+.panel-info li a {
+    color: #2d3e14;
+    background: #DEE5D4;
+    border-color: #2d3e14;
+}
+
+.panel-info > .panel-heading {
+    color: hsl(0, 0%, 100%, 90%);
+    background: #5a7b28;
+    border-color: #5a7b28;
+}
+
+.panel-info a:hover,
+.panel-info li a:hover,
+.panel-info .panel-footer a:hover, {
+    text-decoration: none;
+    text-shadow: -2px 0 2px #524A6E, 0 1.5px 1px #524A6E;
 }
 
 /* -- Logo cluster -- */
@@ -124,6 +171,35 @@ a:hover {
     font-size: 0.9em;
 }
 
+/* -- White text with purple background -- */
+.highlight, .highlight a {
+    color: #FFF;
+    background: #524A6E;
+}
+
+.highlight a {
+    color: #FFF;
+    text-shadow: -2px 0 2px #111;
+}
+
+.highlight a:hover {
+    text-shadow: -2px 0 2px #111, 0 1.5px 1px #111, 2px 0 2px #111, 0 -1px 1px #111;
+}
+
+/* -- White text with green background -- */
+.highlight2, .highlight2 a {
+    color: #111;
+    background: #ACC282;
+}
+
+.highlight2 a {
+    text-shadow: -2px 0 2px #eee;
+}
+
+.highlight2 a:hover {
+    text-shadow: -2px 0 2px #EEE, 0 1.5px 1px #EEE, 2px 0 2px #EEE, 0 -1px 1px #EEE;
+}
+
 /* -- Map Canvas -- */
 #map_canvas {
     border: 1px solid #222;
@@ -134,7 +210,7 @@ a:hover {
 /* -- Misc. -- */
 section {
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 }
 
 .glyphicon {
@@ -150,13 +226,11 @@ section {
     height: 40px;
 }
 
-.ndis {
-    background: url("../images/I-support-the-NDIS-v0.3-01.jpg") no-repeat;
-    background-size: contain;
-    /* background-position-y: 35%; */
-    padding-top: 50%;
-    max-height: 8px;
-    max-width: 800px;
+.ndis-logo {
+    max-width: 50;
+    max-height: 50;
+    vertical-align: bottom;
+    /* mix-blend-mode: multiply; */
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -219,11 +293,6 @@ section {
     /* Make Navigation Toggle on Desktop Hover */
     .dropdown:hover .dropdown-menu {
         display: block;
-    }
-
-    /* Content boxes */
-    section {
-        padding: 50px;
     }
 
     #map {
