@@ -115,7 +115,7 @@ a:hover {
 
 .panel-default a:hover,
 .panel-default li a:hover,
-.panel-default .panel-footer a:hover, {
+.panel-default .panel-footer a:hover {
     text-decoration: none;
     text-shadow: -2px 0 2px #524A6E, 0 1.5px 1px #524A6E;
 }
@@ -138,7 +138,7 @@ a:hover {
 
 .panel-info a:hover,
 .panel-info li a:hover,
-.panel-info .panel-footer a:hover, {
+.panel-info .panel-footer a:hover {
     text-decoration: none;
     text-shadow: -2px 0 2px #524A6E, 0 1.5px 1px #524A6E;
 }
@@ -215,7 +215,7 @@ section {
 
 .glyphicon {
     padding-left: 5px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .footer {
