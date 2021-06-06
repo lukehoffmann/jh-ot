@@ -1,147 +1,102 @@
 ﻿@page
+
 @{
     ViewData["Title"] = "Jenni Hawkins. Occupational Therapy Services for Children.";
     ViewData["Description"] = "Jenni Hawkins is a paediatric occupational therapist in Brisbane, Australia.";
 }
-    <header class="header-home">
-        <!-- navbar -->
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="aboutjenni">About Jenni</a></li>
-                                <li><a href="paediatricot">About Paediatric Occupational Therapy</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checklists <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="checklist2-3">for 2 - 3 year olds</a></li>
-                                <li><a href="checklist3-4">for 3 - 4 year olds (kindy)</a></li>
-                                <li><a href="checklist5">for 5 year olds (prep)</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="aboutjenni#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<header class="header-home">
+    @(await Html.PartialAsync("_NavigationBar"))
 
-        <!-- Picture (placeholder for the main image on small devices) -->
-        <div class="picture-home">
-        </div>
+    <!-- Picture (placeholder for the main image on small devices) -->
+    <div class="picture-home">
+    </div>
 
-        <!-- Logo -->
-        <div class="container">
-            <div class="row">
-                <div class="logo-box panel
+    <!-- Logo -->
+    <div class="container">
+        <div class="row">
+            <div class="logo-box panel
                             col-xs-12
                             col-md-6
                             col-lg-5">
-                    <div class="logo-home panel-body">
-                        <hr />
-                        <h1>Jenni Hawkins</h1>
-                        <h3 class="logosubtitle">Occupational Therapy Services<br /><span class="logosubtitle-highlight">for</span> Children</h3>
-                        <hr />
-                        <ul class="logo-contact list-inline">
-                            <li><a class="contact-link" tabindex="-1" href="tel:0409261682"><span class="glyphicon glyphicon-earphone"></span> <strong>0409 261 682</strong></a></li>
-                            <li><a class="contact-link" tabindex="-1" href="mailto:jenni_hawkins@iinet.net.au"><span class="glyphicon glyphicon-envelope"></span> <strong>jenni_hawkins@iinet.net.au</strong></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1
-                        col-lg-8 col-lg-offset-2">
-                <p class="lead">Jenni Hawkins is a <strong>Paediatric Occupational Therapist</strong> in Brisbane, Australia.</p>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-push-6 col-sm-5
-                        col-md-push-5 col-md-4">
-                <p>Based in <strong>Fig Tree Pocket</strong>, Jenni is available for home and school visits in the western suburbs area.</p>
-                <p class="lead text-right">
-                    <a href="aboutjenni">
-                        About Jenni
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </p>
-            </div>
-
-            <!-- map -->
-            <div id="map" class="col-sm-pull-5 col-sm-6
-                                 col-md-pull-4 col-md-5
-                                 col-lg-pull-3 col-lg-4">
-                <p id="map_canvas" />
-            </div>
-
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="row linksrow">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">What is a Paediatric Occupational Therapist?</div>
-                    <div class="panel-body">
-                        <p>Occupational therapists are concerned with promoting a person’s health through meaningful activity called <strong>occupation</strong>.</p>
-                        <p>A child's occupation includes <strong>play skills</strong>, <strong>social skills</strong>, <strong>emotional skills</strong>, <strong>motor skills</strong> and <strong>self-care skills</strong>.</p>
-                    </div>
-                    <div class="panel-footer text-right">
-                        <a href="paediatricot">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">Should I refer my child to an Occupational Therapist?</div>
-                    <div class="panel-body">
-                        <p>
-                            Developmental checklists can help you decide if your child has the skills they need to start school or kindy.
-                            See the checklists for your child:
-                        </p>
-                    </div>
-                    <!-- List group -->
-                    <ul class="list-group">
-                        <li class="list-group-item text-right"><a href="checklist2-3">2 - 3 years<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                        <li class="list-group-item text-right"><a href="checklist3-4">3 - 4 years (kindergarten)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                        <li class="list-group-item text-right"><a href="checklist5">5 years (prep)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                <div class="logo-home panel-body">
+                    <hr />
+                    <h1>Jenni Hawkins</h1>
+                    <h3 class="logosubtitle">Occupational Therapy Services<br /><span class="logosubtitle-highlight">for</span> Children</h3>
+                    <hr />
+                    <ul class="logo-contact list-inline">
+                        <li><a class="contact-link" tabindex="-1" href="tel:0409261682"><span class="glyphicon glyphicon-earphone"></span> <strong>0409 261 682</strong></a></li>
+                        <li><a class="contact-link" tabindex="-1" href="mailto:jenni_hawkins@iinet.net.au"><span class="glyphicon glyphicon-envelope"></span> <strong>jenni_hawkins@iinet.net.au</strong></a></li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
+</header>
 
-        <div class="container">
-            <div class="footer">
-                <p text-right>&copy; 2014 <a href="index">Jenni Hawkins</a>. All Rights Reserved.</p>
-            </div>
+<section class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1
+                        col-lg-8 col-lg-offset-2">
+            <p class="lead">Jenni Hawkins is a <strong>Paediatric Occupational Therapist</strong> in Brisbane, Australia.</p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-push-6 col-sm-5
+                        col-md-push-5 col-md-4">
+            <p>Based in <strong>Fig Tree Pocket</strong>, Jenni is available for home and school visits in the western suburbs area.</p>
+            <p class="lead text-right">
+                <a href="aboutjenni">
+                    About Jenni
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </p>
         </div>
 
+        <!-- map -->
+        <div id="map" class="col-sm-pull-5 col-sm-6
+                                 col-md-pull-4 col-md-5
+                                 col-lg-pull-3 col-lg-4">
+            <p id="map_canvas" />
+        </div>
 
-@section Scripts {
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9aFmoefP5YL7e0pVlBHq5XARCwK7Qkw"></script>
-    <script src="js/westbrisbanemap.js"></script>
-}
+    </div>
+</section>
 
-<!-- JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<div class="container">
+    <div class="row linksrow">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">What is a Paediatric Occupational Therapist?</div>
+                <div class="panel-body">
+                    <p>Occupational therapists are concerned with promoting a person’s health through meaningful activity called <strong>occupation</strong>.</p>
+                    <p>A child's occupation includes <strong>play skills</strong>, <strong>social skills</strong>, <strong>emotional skills</strong>, <strong>motor skills</strong> and <strong>self-care skills</strong>.</p>
+                </div>
+                <div class="panel-footer text-right">
+                    <a href="paediatricot">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Should I refer my child to an Occupational Therapist?</div>
+                <div class="panel-body">
+                    <p>
+                        Developmental checklists can help you decide if your child has the skills they need to start school or kindy.
+                        See the checklists for your child:
+                    </p>
+                </div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item text-right"><a href="checklist2-3">2 - 3 years<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class="list-group-item text-right"><a href="checklist3-4">3 - 4 years (kindergarten)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class="list-group-item text-right"><a href="checklist5">5 years (prep)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9aFmoefP5YL7e0pVlBHq5XARCwK7Qkw"></script>
+        <script src="js/westbrisbanemap.js"></script>
+    }

@@ -3,162 +3,125 @@
     ViewData["Title"] = "Developmental Checklist for 2 to 3 year olds.";
     ViewData["Description"] = "If your child has difficulty with a number of these skills, he or she may benefit from occupational therapy.";
 }
-    <header>
-        <!-- navbar -->
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="aboutjenni">About Jenni</a></li>
-                                <li><a href="paediatricot">About Paediatric Occupational Therapy</a></li>
-                            </ul>
-                        </li>
-                        <li class="active dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checklists <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="checklist2-3">for 2 - 3 year olds</a></li>
-                                <li><a href="checklist3-4">for 3 - 4 year olds (kindy)</a></li>
-                                <li><a href="checklist5">for 5 year olds (prep)</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="aboutjenni#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="picture row"></div>
-            <!-- page title -->
-            <div class="titlebox row">
-                <div class="col-sm-12">
-                    <h3>Checklist of Development</h3>
-                    <h1>2 – 3 year old</h1>
-                </div>
-            </div>
-        </div>
-    </header>
+<header>
+    @(await Html.PartialAsync("_NavigationBar"))
+
     <div class="container">
-        <section class="row highlight2">
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-8 col-md-offset-2">
-                <p class="lead">
-                    By two or three years of age, a child should be able to perform the following activities.
-                </p>
+        <div class="picture row"></div>
+        <!-- page title -->
+        <div class="titlebox row">
+            <div class="col-sm-12">
+                <h3>Checklist of Development</h3>
+                <h1>2 – 3 year old</h1>
             </div>
-        </section>
-
-        <section class="row">
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-6 col-md-offset-0">
-                <h4>Fine Motor</h4>
-                <ul>
-                    <li>Holds items in fingertips (not in their palm) with slight extension in the wrist (wrist doesn’t sag)</li>
-                    <li>Points to items in a book with index finger straight and other fingers away in palm</li>
-                    <li>Uses both hands together (eg. One hand holds paper while other hand draws)</li>
-                    <li>When drawing does not press too heavily or too lightly</li>
-                    <li>Hand preference is emerging</li>
-                    <li>Can turn over a page of a book, one at a time</li>
-                    <li>Can turn a knob to open a door</li>
-                    <li>Can unscrew loose lids from jars</li>
-                    <li>Inverts jar to obtain contents from inside</li>
-                    <li>Can build a tower of 5 – 8 medium-sized cubes/blocks</li>
-                    <li>Can reach with either hand across the middle of their body (eg. Right hand crosses over to left side)</li>
-                    <li>Can pick up small objects with tip of thumb and tip of index finger (pincer grasp – eg. Sultanas)</li>
-                    <li>Can release a small object into a small container</li>
-                    <li>Holds the pencil with the fingers (not in a fist)</li>
-                </ul>
-                <h4>Visual Perceptual</h4>
-                <ul>
-                    <li>Can post circle, square and triangle correctly into posting toy</li>
-                    <li>Completes single piece jigsaw puzzles with cut-out shapes</li>
-                    <li>Matches shapes, objects and colours</li>
-                    <li>Understands concepts such as in, on, under</li>
-                </ul>
-                <h4>Visual Motor</h4>
-                <ul>
-                    <li>Makes spontaneous scribble on the paper at least 2 inches long</li>
-                    <li>Imitates a vertical line (ie. Copies you as you draw the line)</li>
-                    <li>Imitates a horizontal line (ie. Copies you as you draw the line)</li>
-                    <li>Imitates folding paper (ie. Copies you as you fold the paper) – produces a crease</li>
-                </ul>
-                <h4>Sensory Motor</h4>
-                <ul>
-                    <li>Makes eye contact</li>
-                    <li>Enjoys messy play (eg. Sand, finger paint, play-doh)</li>
-                    <li>Does not avoid touch</li>
-                    <li>Is able to turn the head to look at you without having to turn the whole body</li>
-                    <li>Has age appropriate endurance and does not tire easily</li>
-                    <li>Is aware of pain and temperature</li>
-                </ul>
-            </div>
-
-            <div class="col-xs-10 col-xs-offset-1
-                        col-md-6 col-md-offset-0">
-                <h4>Self-Care</h4>
-                <ul>
-                    <li>Can put hat on, remove socks and shoes</li>
-                    <li>Positions body to help with dressing (eg. Pushes arms into arm-holes of shirt)</li>
-                    <li>Feeds self neatly with a spoon</li>
-                    <li>Feeds self finger food</li>
-                    <li>Beginnings of toilet training (toilet trained by 3 years of age)</li>
-                    <li>Drinks from a normal cup with one hand (open cup – not a sipper cup)</li>
-                </ul>
-                <h4>Play</h4>
-                <ul>
-                    <li>Plays alongside other children</li>
-                    <li>Watches other children and imitates what they do in play</li>
-                    <li>Play actions are simple with no planned story line</li>
-                    <li>Play themes relate to daily life (eg. Dressing, feeding, sleeping, bathing and shopping)</li>
-                    <li>Use a variety of objects in play </li>
-                    <li>(eg. Doll, teddy, cardboard boxes, cars and plastic containers) </li>
-                    <li>Begins to enjoy dress-ups</li>
-                    <li>Simple role play begins (eg. Pretends to be asleep, pretends to be Mummy or Daddy)</li>
-                    <li>Enjoys playing with a willing adult play partner</li>
-                    <li>Can play on their own with a toy of interest for up to 10 minutes</li>
-                </ul>
-                <h4>Social Skills</h4>
-                <ul>
-                    <li>Use sentences with 2 – 3 words and say I, you, me</li>
-                    <li>Starts to understand turn-taking and begins to have short conversations with you</li>
-                    <li>Shows their feelings (tantrums are normal)</li>
-                </ul>
-                <h4>Gross Motor</h4>
-                <ul>
-                    <li>Walks smoothly with alternating arm movements</li>
-                    <li>Throws and kicks a ball without losing balance (may have stiff arms)</li>
-                    <li>Throw a ball overarm</li>
-                    <li>Walks up stairs with alternating feet (ie. One foot on each step)</li>
-                    <li>Walks down stairs (may have 2 feet on each step)</li>
-                    <li>Jump on the spot</li>
-                    <li>Can walk tip-toe for a few steps</li>
-                    <li>Enjoys rough and tumble play</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="row highlight">
-            <div class="col-xs-10 col-xs-offset-1">
-                <p class="lead">
-                    If your child  has difficulty with a number of these skills, he or she may benefit from occupational therapy.
-                </p>
-            </div>
-        </section>
-    </div>
-
-    <footer class="container">
-        <div class="footer">
-            <p>&copy; 2014 <a href="index">Jenni Hawkins</a>. All Rights Reserved.</p>
         </div>
-    </footer>
+    </div>
+</header>
+
+<div class="container">
+    <section class="row highlight2">
+        <div class="col-xs-10 col-xs-offset-1
+                        col-md-8 col-md-offset-2">
+            <p class="lead">
+                By two or three years of age, a child should be able to perform the following activities.
+            </p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-xs-10 col-xs-offset-1
+                        col-md-6 col-md-offset-0">
+            <h4>Fine Motor</h4>
+            <ul>
+                <li>Holds items in fingertips (not in their palm) with slight extension in the wrist (wrist doesn’t sag)</li>
+                <li>Points to items in a book with index finger straight and other fingers away in palm</li>
+                <li>Uses both hands together (eg. One hand holds paper while other hand draws)</li>
+                <li>When drawing does not press too heavily or too lightly</li>
+                <li>Hand preference is emerging</li>
+                <li>Can turn over a page of a book, one at a time</li>
+                <li>Can turn a knob to open a door</li>
+                <li>Can unscrew loose lids from jars</li>
+                <li>Inverts jar to obtain contents from inside</li>
+                <li>Can build a tower of 5 – 8 medium-sized cubes/blocks</li>
+                <li>Can reach with either hand across the middle of their body (eg. Right hand crosses over to left side)</li>
+                <li>Can pick up small objects with tip of thumb and tip of index finger (pincer grasp – eg. Sultanas)</li>
+                <li>Can release a small object into a small container</li>
+                <li>Holds the pencil with the fingers (not in a fist)</li>
+            </ul>
+            <h4>Visual Perceptual</h4>
+            <ul>
+                <li>Can post circle, square and triangle correctly into posting toy</li>
+                <li>Completes single piece jigsaw puzzles with cut-out shapes</li>
+                <li>Matches shapes, objects and colours</li>
+                <li>Understands concepts such as in, on, under</li>
+            </ul>
+            <h4>Visual Motor</h4>
+            <ul>
+                <li>Makes spontaneous scribble on the paper at least 2 inches long</li>
+                <li>Imitates a vertical line (ie. Copies you as you draw the line)</li>
+                <li>Imitates a horizontal line (ie. Copies you as you draw the line)</li>
+                <li>Imitates folding paper (ie. Copies you as you fold the paper) – produces a crease</li>
+            </ul>
+            <h4>Sensory Motor</h4>
+            <ul>
+                <li>Makes eye contact</li>
+                <li>Enjoys messy play (eg. Sand, finger paint, play-doh)</li>
+                <li>Does not avoid touch</li>
+                <li>Is able to turn the head to look at you without having to turn the whole body</li>
+                <li>Has age appropriate endurance and does not tire easily</li>
+                <li>Is aware of pain and temperature</li>
+            </ul>
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1
+                        col-md-6 col-md-offset-0">
+            <h4>Self-Care</h4>
+            <ul>
+                <li>Can put hat on, remove socks and shoes</li>
+                <li>Positions body to help with dressing (eg. Pushes arms into arm-holes of shirt)</li>
+                <li>Feeds self neatly with a spoon</li>
+                <li>Feeds self finger food</li>
+                <li>Beginnings of toilet training (toilet trained by 3 years of age)</li>
+                <li>Drinks from a normal cup with one hand (open cup – not a sipper cup)</li>
+            </ul>
+            <h4>Play</h4>
+            <ul>
+                <li>Plays alongside other children</li>
+                <li>Watches other children and imitates what they do in play</li>
+                <li>Play actions are simple with no planned story line</li>
+                <li>Play themes relate to daily life (eg. Dressing, feeding, sleeping, bathing and shopping)</li>
+                <li>Use a variety of objects in play </li>
+                <li>(eg. Doll, teddy, cardboard boxes, cars and plastic containers) </li>
+                <li>Begins to enjoy dress-ups</li>
+                <li>Simple role play begins (eg. Pretends to be asleep, pretends to be Mummy or Daddy)</li>
+                <li>Enjoys playing with a willing adult play partner</li>
+                <li>Can play on their own with a toy of interest for up to 10 minutes</li>
+            </ul>
+            <h4>Social Skills</h4>
+            <ul>
+                <li>Use sentences with 2 – 3 words and say I, you, me</li>
+                <li>Starts to understand turn-taking and begins to have short conversations with you</li>
+                <li>Shows their feelings (tantrums are normal)</li>
+            </ul>
+            <h4>Gross Motor</h4>
+            <ul>
+                <li>Walks smoothly with alternating arm movements</li>
+                <li>Throws and kicks a ball without losing balance (may have stiff arms)</li>
+                <li>Throw a ball overarm</li>
+                <li>Walks up stairs with alternating feet (ie. One foot on each step)</li>
+                <li>Walks down stairs (may have 2 feet on each step)</li>
+                <li>Jump on the spot</li>
+                <li>Can walk tip-toe for a few steps</li>
+                <li>Enjoys rough and tumble play</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row highlight">
+        <div class="col-xs-10 col-xs-offset-1">
+            <p class="lead">
+                If your child  has difficulty with a number of these skills, he or she may benefit from occupational therapy.
+            </p>
+        </div>
+    </section>
+</div>

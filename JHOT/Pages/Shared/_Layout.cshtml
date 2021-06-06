@@ -5,12 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="jenni hawkins, occupational therapy, peadiatric, children, brisbane, western suburbs, fig tree pocket, kenmore, chapel hill, kenmore hills, brookfield, pullenvale, moggill, indooroopilly, taringa, toowong" />
-    <meta name="description" content="Jenni Hawkins is a paediatric occupational therapist in Brisbane, Australia." />
-    <title>Jenni Hawkins. Occupational Therapy Services for Children.</title>
-    <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
-
     <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Description"]" />
+    <meta name="keywords" content="jenni hawkins, occupational therapy, peadiatric, children, brisbane, western suburbs, fig tree pocket, kenmore, chapel hill, kenmore hills, brookfield, pullenvale, moggill, indooroopilly, taringa, toowong" />
+
+    <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,900" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,900' rel='stylesheet' type='text/css'>
@@ -21,11 +20,16 @@
 <body>
     @RenderBody()
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="container">
+        <div class="footer">
+            <p text-right>&copy; 2014 <a href="index">Jenni Hawkins</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    @* Bootstrap core JavaScript *@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+    @* Other Scripts *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
