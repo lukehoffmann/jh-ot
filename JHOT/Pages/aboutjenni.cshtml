@@ -1,25 +1,9 @@
 ﻿@page
-<!doctype html>
-<!--
-    Jenni Hawkins - Home page
--->
-<html lang="en">
+@{
+    ViewData["Title"] = "About Jenni Hawkins. Occupational Therapy Services for Children.";
+    ViewData["Description"] = "Jenni Hawkins is a paediatric occupational therapist in Brisbane, Australia.";
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
-    <meta name="keywords" content="jenni hawkins, occupational therapy, peadiatric, children, brisbane, western suburbs, fig tree pocket, kenmore, chapel hill, kenmore hills, brookfield, pullenvale, moggill, indooroopilly, taringa, toowong"/>
-    <meta name="description" content="Jenni Hawkins is a paediatric occupational therapist in Brisbane, Australia."/>
-    <title>About Jenni Hawkins. Occupational Therapy Services for Children.</title>
-    <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
-
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,900" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/site.css">
-</head>
-
-<body>
+}
     <header>
         <!-- navbar -->
         <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -81,13 +65,13 @@
                 </p>
                 <p>
                     Jenni graduated from the University of South Australia, Adelaide in 1999 with a Bachelor of Applied
-                    Science – Occupational Therapy. Jenni began her career working with adults and quickly discovered 
+                    Science – Occupational Therapy. Jenni began her career working with adults and quickly discovered
                     her passion and joy for working with children. She has been working with children since 2006, and
                     has a special interest in children’s development. The majority of her work has been with children
                     from birth to 9 years of age.
                 </p>
                 <p>
-                    Jenni has a holistic approach to working with children within the context of their home, 
+                    Jenni has a holistic approach to working with children within the context of their home,
                     child-care/school and community environment. She uses family centred principles in therapy and
                     works to understand each child’s unique situation and goals.
                 </p>
@@ -200,10 +184,12 @@
                     <strong>ABN:</strong> 75 388 373 648<br />
                     <strong>Provider Number:</strong> 4726921T
                 </div>
-                <div class="panel-footer ndis"><a href="https://www.ndis.gov.au" class="ndis">
-                    <img class="ndis ndis-logo" src="images/I-heart-NDIS-v0.3-01.jpg" width="50"/>
-                    <img class="ndis ndis-logo" src="images/Tagline-Registered-NDIS-Provider-01.jpg" height="30"/>
-                </a></div>
+                <div class="panel-footer ndis">
+                    <a href="https://www.ndis.gov.au" class="ndis">
+                        <img class="ndis ndis-logo" src="images/I-heart-NDIS-v0.3-01.jpg" width="50" />
+                        <img class="ndis ndis-logo" src="images/Tagline-Registered-NDIS-Provider-01.jpg" height="30" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -213,11 +199,3 @@
             <p>&copy; 2014 <a href="index">Jenni Hawkins</a>. All Rights Reserved.</p>
         </div>
     </footer>
-
-</body>
-</html>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>

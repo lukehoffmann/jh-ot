@@ -1,25 +1,8 @@
 ﻿@page
-<!doctype html>
-<!--
-    Jenni Hawkins - Developmental Checklist
--->
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
-    <meta name="keywords" content="jenni hawkins, occupational therapy, peadiatric, children, development, checklist, brisbane, western suburbs, fig tree pocket, kenmore, chapel hill, kenmore hills, brookfield, pullenvale, moggill, indooroopilly, taringa, toowong"/>
-    <meta name="description" content="If your child has difficulty with a number of these skills, he or she may benefit from occupational therapy."/>
-    <title>Developmental Checklist for 2 to 3 year olds.</title>
-    <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
-
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,900" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/site.css">
-</head>
-
-<body>
+@{
+    ViewData["Title"] = "Developmental Checklist for 2 to 3 year olds.";
+    ViewData["Description"] = "If your child has difficulty with a number of these skills, he or she may benefit from occupational therapy.";
+}
     <header>
         <!-- navbar -->
         <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -179,11 +162,3 @@
             <p>&copy; 2014 <a href="index">Jenni Hawkins</a>. All Rights Reserved.</p>
         </div>
     </footer>
-</body>
-</html>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
