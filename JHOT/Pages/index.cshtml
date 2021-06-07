@@ -6,7 +6,6 @@
 }
 <header class="header-home">
     @(await Html.PartialAsync("_NavigationBar"))
-
     <!-- Picture (placeholder for the main image on small devices) -->
     <div class="picture-home">
     </div>
@@ -46,7 +45,7 @@
                         col-md-push-5 col-md-4">
             <p>Based in <strong>Fig Tree Pocket</strong>, Jenni is available for home and school visits in the western suburbs area.</p>
             <p class="lead text-right">
-                <a href="aboutjenni">
+                <a asp-page="aboutjenni">
                     About Jenni
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
@@ -73,7 +72,7 @@
                     <p>A child's occupation includes <strong>play skills</strong>, <strong>social skills</strong>, <strong>emotional skills</strong>, <strong>motor skills</strong> and <strong>self-care skills</strong>.</p>
                 </div>
                 <div class="panel-footer text-right">
-                    <a href="paediatricot">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a asp-page="paediatricot">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
         </div>
@@ -88,15 +87,16 @@
                 </div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item text-right"><a href="checklist2-3">2 - 3 years<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                    <li class="list-group-item text-right"><a href="checklist3-4">3 - 4 years (kindergarten)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                    <li class="list-group-item text-right"><a href="checklist5">5 years (prep)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class="list-group-item text-right"><a asp-page="checklist2-3">2 - 3 years<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class="list-group-item text-right"><a asp-page="checklist3-4">3 - 4 years (kindergarten)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class="list-group-item text-right"><a asp-page="checklist5">5 years (prep)<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                 </ul>
             </div>
         </div>
     </div>
+</div>
 
-    @section Scripts {
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9aFmoefP5YL7e0pVlBHq5XARCwK7Qkw"></script>
-        <script src="js/westbrisbanemap.js"></script>
-    }
+@section Scripts {
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj9aFmoefP5YL7e0pVlBHq5XARCwK7Qkw"></script>
+    <script src="js/westbrisbanemap.js"></script>
+}

@@ -16,23 +16,23 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class=@(activeIf("index"))><a href="index">Home</a></li>
+                <li class=@(activeIf("index"))><a asp-page="index">Home</a></li>
                 <li class="dropdown @(activeIf("aboutjenni")) @(activeIf("paediatricot"))">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class=@(activeIf("aboutjenni"))><a href="aboutjenni">About Jenni</a></li>
-                        <li class=@(activeIf("paediatricot"))><a href="paediatricot">About Paediatric Occupational Therapy</a></li>
+                        <li class=@(activeIf("aboutjenni"))><a asp-page="aboutjenni">About Jenni</a></li>
+                        <li class=@(activeIf("paediatricot"))><a asp-page="paediatricot">About Paediatric Occupational Therapy</a></li>
                     </ul>
                 </li>
                 <li class="dropdown @(activeIf("checklist"))">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checklists <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class=@(activeIf("checklist2"))><a href="checklist2-3">for 2 - 3 year olds</a></li>
-                        <li class=@(activeIf("checklist3"))><a href="checklist3-4">for 3 - 4 year olds (kindy)</a></li>
-                        <li class=@(activeIf("checklist5"))><a href="checklist5">for 5 year olds (prep)</a></li>
+                        <li class=@(activeIf("checklist2"))><a asp-page="checklist2-3">for 2 - 3 year olds</a></li>
+                        <li class=@(activeIf("checklist3"))><a asp-page="checklist3-4">for 3 - 4 year olds (kindy)</a></li>
+                        <li class=@(activeIf("checklist5"))><a asp-page="checklist5">for 5 year olds (prep)</a></li>
                     </ul>
                 </li>
-                <li><a href="aboutjenni#contact">Contact</a></li>
+                <li><a asp-page="aboutjenni" asp-fragment="contact">Contact</a></li>
             </ul>
         </div>
     </div>
